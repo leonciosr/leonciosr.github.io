@@ -1,0 +1,37 @@
+<div class="section-info">
+  <h2 class="section-title">Últimos Projetos</h2>      
+    <p class="section-description">Estes são alguns dos trabalhos aos quais tenho me dedicado ultimamente.</p>      
+</div>
+<div class="wrapper" data-page="{{ currentPage }}" data-totalPages="{{ paginator.total_pages }}">
+  {% for project in site.categories.projects limit:site.last_items offset:offset %}
+    {% assign author = site.authors[project.author] %}
+    <article class="posts">
+      {% if project.img %}
+        <a class="post-thumbnail hidden" style="background-image: url({{"/images/pages/" | prepend: site.baseurl | append : project.img}})" href="{{project.url | prepend: site.baseurl}}">
+          <div class="cover"></div>
+        </a>
+      {% endif %}
+      <div class="post-body {{ body-full }}">
+        <div class="post-meta">
+          {% if project.tags.size >= 1 %}
+          <div class="article-tags-box">
+            {% for tag in project.tags %}
+            <a href="{{ site.baseurl }}/tags#{{tag}}" class="tag article-tag">{{ tag }}</a>
+            {% endfor %}
+          </div>
+          {% else %}
+          {% endif %}
+        </div>
+        <h2 class="post-title"><a href="{{project.url | prepend: site.baseurl}}">{{project.title}}</a></h2>
+        <p>{% if project.description %}{{ project.description }}{% else %}{{ project.content | strip_html | truncatewords: 20 }}{% endif %}</p>
+      </div>
+    </article> <!-- /.posts -->
+  {% endfor %}
+    <div class="section-pagination-box">
+      {% assign postCount = site.categories.projects | size %}
+      {% assign postsCovered = site.last_items | plus:offset %}
+      {% if postsCovered < postCount %}
+      <a href="/projects" class="load-more btn btn-middle">VER TODOS</a>
+      {% endif %}
+    </div> <!-- /.section-pagination-box -->
+</div> <!-- /.wrapper -->

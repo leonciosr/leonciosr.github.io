@@ -1,0 +1,26 @@
+.pagination-box {
+    // margin-bottom: 110px;
+    margin-bottom: 80px;
+    padding: 0 15px;
+    text-align: center;
+    min-height: 60px;
+    .load-more {
+        border-radius: 8px;
+    }
+}
+
+.section-pagination-box {
+    width: 100vw;
+    margin-bottom: 50px;
+    padding: 0 15px;
+    text-align: center;
+    .load-more {
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pagination-box {
+        margin-bottom: 50px;
+    }
+}

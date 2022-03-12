@@ -1,0 +1,10 @@
+- text: Inicio
+  url: /
+- text: Projetos
+  url: /projects/
+- text: Blog
+  url: /blog/
+- text: Sobre
+  url: /about/
+- text: Contato
+  url: /contact/

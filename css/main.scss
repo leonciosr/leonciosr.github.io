@@ -1,0 +1,30 @@
+---
+---
+
+@import "styles.scss";
+
+:root {
+    --brand-color: #fec824;
+    --white: #fff;
+    --light-gray: #ededf1;
+    --light-blue: #f3f7ff;
+    --blue-gray: #716f8a;
+    --gray: #767676;
+    --dark: #181818;
+    --dark-blue: #1e2740;
+    --background-color: var(--white);
+    --background-alt-color: var(--light-gray);
+    --text-color: var(--dark);
+    --text-alt-color: var(--gray);
+    --heading-font-color: var(--dark);
+    --link-color: var(--dark);
+    --link-color-hover: var(--dark);
+    --button-color: var(--white);
+    --button-background-color: var(--brand-color);
+    --button-background-hover: #ffd147;
+    --border-color: var(--light-blue);
+    --border-color-alt: var(--light-blue);
+    --th-color: var(--light-gray);
+    --tr-color: var(--light-gray);
+    --syntax-highlighting-background: #f3f3f3;
+}

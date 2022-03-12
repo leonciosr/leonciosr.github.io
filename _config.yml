@@ -1,0 +1,72 @@
+# Site settings
+title: Leôncio Rodrigues
+description: "Aprendi essa frase quando ainda jovem e nunca a esqueci: 'Lutar para vencer. Estudar para crescer'."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: leonciosr.github.io # the base hostname & protocol for your site, e.g. http://example.com
+domain: leonciosr.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+
+# Banner Section
+hero: table_night.jpeg
+hero-title: Olá, seja bem-vindo!
+hero-description: Aqui compartilho pensamentos, ideias e histórias. Sinceramente, desejo que encontres algo por aqui que seja relevante para ti.
+
+# Author - Creator
+author-name: Leôncio Rodrigues
+author-image: profile.jpeg
+about-author: Sou amante da natureza e apaixonado pelo som do violino, mas ainda não aprendi tocar este instrumento.
+author-email: leonciosr@gmail.com
+author-twitter: https://twitter.com/leonciosr
+author-facebook: https://www.facebook.com/leonciosr
+author-instagram: https://www.instagram.com/leonciosr
+author-pinterest: https://pinterest.com/leonciodsr
+
+
+# Social Media Links (Links are located in hero and footer)
+twitter: https://twitter.com/leonciosr
+facebook: https://facebook.com/leonciosr
+instagram: https://www.instagram.com/leonciosr
+pinterest: https://pinterest.com/leonciodsr
+# youtube: https://www.youtube.com/leonciosr
+contact: mailto:leonciosr@gmail.com?Subject=Olá, vamos tomar um café?
+whatsapp: https://wa.me/5519996808547
+
+# Google Analytics
+google-analytics: # Add your identifier. For example UA-99631805-1.
+
+# Newsletter
+mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+
+# Comment Section (Disqus)
+# disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+paginate: 6
+last_items: 3
+paginate_path: "/page/:num"
+
+# Pages path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
+
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+
+include:
+  - _pages
+
+# Exclude from processing.
+exclude:
+ - Gemfile
+ - Gemfile.lock
+ - vendor
+
+#sass
+sass:
+  sass_dir:           _sass
+  style:              compressed

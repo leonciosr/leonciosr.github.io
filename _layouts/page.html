@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<!-- <div class="page-header" style="background: url({{"/images/pages/" | prepend: site.baseurl | append : page.image}})">
+  <div class="page-title-full">
+    <h1 class="page-title">{{ page.title | escape }}</h1>
+    {% if page.subtitle %}
+      <h2 class="page-subtitle">{{ page.subtitle | escape }}</h2>
+    {% else %}
+    {% endif %}
+  </div>
+</div> -->
+<!-- <div class="page-header">
+  <div class="hero-image">
+    <img class="lazy loaded" alt="Contact" data-ll-status="loaded" src="/images/pages/{{page.image}}">
+  </div>
+  <div class="page-title-full">
+    <h1 class="page-title">{{ page.title | escape }}</h1>
+    {% if page.subtitle %}
+      <h2 class="page-subtitle">{{ page.subtitle | escape }}</h2>
+    {% else %}
+    {% endif %}
+  </div>
+</div> -->
+
+<section class="hero-page">  
+  <div class="hero-image">
+    <img class="lazy loaded" alt="Contact" data-ll-status="loaded" src="/images/pages/{{page.image}}">
+  </div>
+  <div class="hero-inner">
+    <h1 class="hero-title">{{ page.title | escape }}</h1>
+  </div>
+</section>
+
+<article class="page">
+
+  <div class="page-content">
+    {{ content }}
+  </div>
+
+</article> <!-- End Page -->

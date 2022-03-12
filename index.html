@@ -1,0 +1,24 @@
+---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: default
+---
+{% include hero.html %}
+{% include info-box.html %}
+
+{% if paginator.page %}
+  {% assign offset = paginator.page | minus:1 | times:paginator.per_page %}
+  {% assign currentPage = paginator.page %}
+{% else %}
+  {% assign offset = 0 %}
+  {% assign currentPage = 1 %}
+{% endif %}
+
+<div class="content-wrap">
+  {% include index-projects.html %}
+  <section class="section-middle">
+    <!-- <span class="section-message">"Lutar para Vencer ... Estudar para Crescer"</span> -->
+  </section>
+  {% include index-posts.html %}
+</div> <!-- /.content-wrap -->

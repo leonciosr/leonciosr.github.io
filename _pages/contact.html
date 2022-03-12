@@ -1,0 +1,23 @@
+---
+layout: page
+title: Convide-me para um café :)
+image: cafeteria.jpeg
+---
+<p class="contact-subtitle">Se quiseres falar sobre alguma <strong>ideia</strong> ou mesmo me fornecer algum <strong>feedback</strong>, por favor, entre em contato e vamos conversar</p>
+<hr>
+<div class="info-box clearfix">
+  <div class="wrapper-content">
+    <div class="info-social">
+      <ul class="info-contact-list">           
+        {% if site.contact %}
+        <li><a href="{{ site.contact }}" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        {% else %}
+        {% endif %}
+        {% if site.whatsapp %}
+          <li><a href="{{ site.whatsapp }}" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+        {% else %}
+        {% endif %}
+      </ul>
+    </div>
+  </div> <!-- /.info-wrapper -->
+</div>
