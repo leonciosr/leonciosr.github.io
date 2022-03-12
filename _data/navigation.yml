@@ -1,10 +1,10 @@
 - text: Inicio
   url: /
 - text: Projetos
-  url: /projects/
+  url: /projects
 - text: Blog
-  url: /blog/
+  url: /blog
 - text: Sobre
-  url: /about/
+  url: /about
 - text: Contato
-  url: /contact/
+  url: /contact

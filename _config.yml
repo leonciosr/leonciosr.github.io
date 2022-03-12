@@ -2,7 +2,7 @@
 title: Leôncio Rodrigues
 description: "Aprendi essa frase quando ainda jovem e nunca a esqueci: 'Lutar para vencer. Estudar para crescer'."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: leonciosr.github.io # the base hostname & protocol for your site, e.g. http://example.com
+url: https://leonciosr.github.io # the base hostname & protocol for your site, e.g. http://example.com
 domain: leonciosr.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 
 # Banner Section
