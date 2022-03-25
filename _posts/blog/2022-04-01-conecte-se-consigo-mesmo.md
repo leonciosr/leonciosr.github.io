@@ -1,9 +1,10 @@
 ---
 layout: post
-title: O que é Prioridade em sua Vida
+title: Conecte-se consigo mesmo
 # date: 2022-02-20 20:05:50 +0300
-date: 01-03-2022 20:05:50 +0300
-img: escolhas.jpeg
+date: 25-03-2022 20:05:50 +0300
+publication: 01-04-2022 20:05:50 +0300
+img: encontrar-se.jpeg
 category: blog
 tags: [Vida]
 ---

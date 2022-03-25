@@ -6,10 +6,10 @@ layout: default
   <div class="post-header-info">
     <h1 class="post-title">{{ page.title | escape }}</h1>
     <div class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}">
+      <time datetime="{{ page.publication | date_to_xmlschema }}">
         {% assign months = "janeiro,fevereiro,março,abril,maio,junho,julho,agosto,setembro,outubro,novembro,dezembro" | split: "," %}
-        {% assign month_number = page.date | date: "%m" | minus: 1 %}
-        {{ page.date | date: "%-d" }} de {{ months[month_number] }} de  {{ page.date | date: "%Y" }}
+        {% assign month_number = page.publication | date: "%m" | minus: 1 %}
+        {{ page.publication | date: "%-d" }} de {{ months[month_number] }} de  {{ page.publication | date: "%Y" }}
         <!-- {% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %} {{ page.date | date: date_format }} -->
       </time>
     </div>

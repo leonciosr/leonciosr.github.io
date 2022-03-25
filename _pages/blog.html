@@ -34,8 +34,11 @@ layout: default
       <div class="post-body {{ body-full }}">
         <div class="post-meta">
           <p>
-            <time datetime="{{ post.date | date_to_xmlschema }}">
-              {% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}{{ post.date | date: date_format }}
+            <time datetime="{{ post.publication | date_to_xmlschema }}">
+              {% assign months = "jan,fev,mar,abr,maio,jun,jul,ago,set,out,nov,dez" | split: "," %}
+              {% assign month_number = post.publication | date: "%-m" | minus: 1 %}
+              {{ post.publication | date: "%-d" }} {{ months[month_number] }} {{ post.publication | date: "%Y" }}
+              <!-- {% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}{{ post.date | date: date_format }} -->
             </time>
           </p>
           {% if post.tags.size >= 1 %}
